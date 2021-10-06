@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
 
     <title>MyCorner</title>
 </head>
@@ -17,6 +18,8 @@
 </style>
 
 <body>
+
+
     <!-- Navbar -->
     <nav class="navbar navbar-light fixed-top bg-light">
         <div class="container">
@@ -53,8 +56,10 @@
         </div>
     </nav>
     <!-- main intro and img -->
+
     <section>
         <div class="container-lg mt-5 ">
+
 
             <div class="row mt-1 justify-content-md-center align-content-sm-start ">
                 <div class="col-md-5 ">
@@ -63,7 +68,7 @@
                         <p class="display-5 text text-muted">Your Way 2Travel</p>
                     </h1>
                     <p class="lead text-muted  my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                   
+
                 </div>
                 <div class="col-md-5 mt-sm-2">
                     <img class="img- img-fluid shadow  d-md-block  ms-md-5 "
@@ -74,16 +79,76 @@
             </div>
         </div>
     </section>
+    <!-- Slider -->
+    <style>
+        .carousel-inner .carousel-item img {
+            
+            width: 100% ;
+              height: 75vh;
+
+            	 
+  
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-8 ">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"> 
+                            <img src="assets/img/slide-3.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/slide-2.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/2.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-8 justify-content-start  ">
+                <div class="display-2">
+                    Welcome to our World
+                </div>
+                <p class="lead text-muted">You Can travel Only With Us</p>
+            </div>
+        </div>
+    </div>
     <!--CARDS-->
+    <style>
+        section  #cards{
+           width: 138px ;
+           height: 207px;
+        }
+    </style>
     <section class="">
         <div class="container-lg ">
             <div class="row ">
                 <div class="col-md-4 col-sm-8 ">
                     <div class="card mb-3" style="max-width: 540px; ">
                         <div class="row g-0">
-                            <div class="col-md-4 ">
-                                <img src="assets/img/col1.jpg"
-                                    class="img-fluid rounded-start" alt="...">
+                            <div class="col-md-4  " >
+                                <img src="assets/img/card1.jpg" id="cards" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -101,8 +166,7 @@
                     <div class="card mb-3" style="max-width: 540px; ">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="assets/img/2.jpg"
-                                    class="img-fluid rounded-start" alt="...">
+                                <img src="assets/img/card2.jpg" id="cards" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -120,7 +184,7 @@
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="assets/img/osman-rana-dI9KhXi0ooE-unsplash (1).jpg"
+                                <img src="assets/img/card3.jpg" id="cards"b 
                                     class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8 ">
@@ -136,11 +200,13 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
-
-
+        </div>
     </section>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
