@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="assets/style.css">
     <link href="assets/bootstrap.min.css" rel="stylesheet">
     <link href="assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <title>MyCorner</title>
 </head>
 <style>
     section {
         padding: 60px 0;
+    }
+    .abtr:hover{
+        
+    
     }
 </style>
 
@@ -61,16 +66,17 @@
         <div class="container-lg mt-5 ">
 
 
-            <div class="row mt-1 justify-content-md-center align-content-sm-start ">
-                <div class="col-md-5 ">
+            <div class="row mt-1 p-4 justify-content-center  align-items-center text-center ">
+                <div class="col-md-5  ">
                     <h1>
-                        <p class="display-2">Black-White</p>
-                        <p class="display-5 text text-muted">Your Way 2Travel</p>
+                        <p class="display-2 ">Black-White</p>
+                        <p class="display-5 text-muted">Your Way 2Travel</p>
                     </h1>
-                    <p class="lead text-muted  my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
+                    <p class="lead text-muted  my-4 text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <button class="btn btn-outline-secondary lead abtr" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom">About Rescco <i class="bi bi-code-slash"></i></button>
                 </div>
-                <div class="col-md-5 mt-sm-2">
+                <div class="col-md-5  ">
                     <img class="img- img-fluid shadow  d-md-block  ms-md-5 "
                         src="assets/img/sergey-vinogradov-EfWOtmAtqXQ-unsplash.jpg" alt="">
 
@@ -79,6 +85,20 @@
             </div>
         </div>
     </section>
+    <!-- offcanvas -->
+    
+    <div class="container">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Who's Rescco <i class="bi bi-emoji-smile"></i></h5>
+             
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small lead ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, cumque!
+        </div>
+    </div>
+    </div>
     <!-- Slider -->
     <style>
         .carousel-inner .carousel-item img {
@@ -91,7 +111,7 @@
         }
     </style>
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center  align-items-center text-center">
             <div class="col-md-6 col-sm-8 ">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -127,8 +147,8 @@
                 </div>
             </div>
             <div class="col-md-6 col-sm-8 justify-content-start  ">
-                <div class="display-2">
-                    Welcome to our World
+                <div class="display-2 ">
+                    Welcome   2 our World
                 </div>
                 <p class="lead text-muted">You Can travel Only With Us</p>
             </div>
@@ -205,8 +225,6 @@
 
         </div>
     </section>
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
